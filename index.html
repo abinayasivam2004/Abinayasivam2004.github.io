@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pon Abinaya | Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#0b1020;color:#f4f7ff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(11,16,32,.85);backdrop-filter:blur(12px);border-bottom:1px solid #26304d}
+.nav{max-width:1100px;margin:auto;padding:16px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:800}.logo span{color:#7c5cff}
+.links{display:flex;gap:22px;font-size:14px}.links a:hover{color:#9c88ff}
+.hero{min-height:100vh;display:flex;align-items:center;max-width:1100px;margin:auto;padding:110px 22px 70px}
+.hero-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center;width:100%}
+.badge{display:inline-block;padding:8px 14px;border:1px solid #38446b;border-radius:30px;color:#b8c1e8;font-size:13px;margin-bottom:20px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.05;margin-bottom:18px}
+.gradient{background:linear-gradient(90deg,#9d7cff,#5ee7ff);-webkit-background-clip:text;color:transparent}
+.hero p{color:#aeb7d5;max-width:650px;font-size:18px}
+.btns{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{padding:12px 20px;border-radius:12px;border:1px solid #394568;font-weight:700}
+.primary{background:#7c5cff;border-color:#7c5cff}.btn:hover{transform:translateY(-2px)}
+.card{background:linear-gradient(145deg,#151d36,#0f1529);border:1px solid #293555;border-radius:24px;padding:32px;box-shadow:0 20px 60px #0005}
+.profile{width:240px;height:240px;margin:auto;border-radius:50%;display:grid;place-items:center;font-size:74px;font-weight:900;background:linear-gradient(135deg,#7c5cff,#43d9ff);color:#fff;box-shadow:0 0 80px #7c5cff55}
+section{max-width:1100px;margin:auto;padding:80px 22px}
+.section-title{font-size:34px;margin-bottom:10px}.sub{color:#8f9abb;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:10px 14px;background:#151d36;border:1px solid #303c5e;border-radius:10px;color:#cbd3ef}
+.project h3,.card h3{margin-bottom:8px}.project p,.card p{color:#aab4d3}.project{transition:.2s}.project:hover{transform:translateY(-4px);border-color:#6f5bdd}
+.timeline{border-left:2px solid #35405e;padding-left:22px}.item{margin-bottom:28px}.item h3{font-size:20px}.item small{color:#7c8aad}.item p{color:#aab4d3}
+footer{text-align:center;padding:40px 20px;color:#7f8bab;border-top:1px solid #222d49}
+@media(max-width:760px){.links{display:none}.hero-grid,.grid{grid-template-columns:1fr}.hero{text-align:center}.hero p{margin:auto}.btns{justify-content:center}.profile{width:190px;height:190px;font-size:58px}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><div class="logo">Pon <span>Abinaya</span></div><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero">
+<div class="hero-grid">
+<div>
+<span class="badge">MCA Graduate • Robotics Trainer • AI/ML Enthusiast</span>
+<h1>Hi, I'm <span class="gradient">Pon Abinaya</span></h1>
+<p>I am an MCA graduate passionate about technology, AI/ML, Robotics, IoT and teaching. I enjoy turning ideas into simple, useful projects and helping students learn technology through hands-on experiences.</p>
+<div class="btns"><a class="btn primary" href="#projects">View My Work</a><a class="btn" href="#contact">Contact Me</a></div>
+</div>
+<div class="card"><div class="profile">PA</div><p style="text-align:center;margin-top:22px">Technology • Learning • Creativity</p></div>
+</div>
+</header>
+
+<section id="about"><h2 class="section-title">About Me</h2><p class="sub">A quick introduction</p>
+<div class="card"><p>I completed my MCA after my BCA at SFR College, Sivakasi. My academic project focused on deep learning-based currency detection and recognition for visually impaired people. I am interested in non-coding and technology-oriented roles as well as robotics and STEM education. I currently work with school students on Arduino, IoT and robotics concepts.</p></div></section>
+
+<section id="skills"><h2 class="section-title">Skills</h2><p class="sub">Technologies and areas I work with</p>
+<div class="skills">
+<span class="skill">Python</span><span class="skill">Java</span><span class="skill">SQL</span><span class="skill">HTML & CSS</span><span class="skill">Django</span><span class="skill">AI / Machine Learning</span><span class="skill">Arduino</span><span class="skill">Robotics</span><span class="skill">IoT</span><span class="skill">STEM Training</span><span class="skill">GitHub</span><span class="skill">Communication</span>
+</div></section>
+
+<section id="projects"><h2 class="section-title">Featured Projects</h2><p class="sub">Selected academic and hands-on work</p>
+<div class="grid">
+<div class="card project"><h3>💳 Currency Detection & Recognition</h3><p>Deep learning-based project designed to identify Indian currency from images and support visually impaired users. The project combines image processing and machine learning concepts.</p></div>
+<div class="card project"><h3>🌅 Arduino Sunrise Animation</h3><p>A beginner-friendly Arduino/OLED animation project created to demonstrate microcontrollers, displays, programming logic and visual output.</p></div>
+<div class="card project"><h3>🤖 Robotics & IoT Learning Projects</h3><p>Hands-on school STEM activities using Arduino, sensors, displays and IoT concepts to make robotics easy and engaging for students.</p></div>
+<div class="card project"><h3>📊 Data & Software Fundamentals</h3><p>Practical exposure to SQL, Python, web fundamentals, databases and software testing concepts through academic and learning projects.</p></div>
+</div></section>
+
+<section id="experience"><h2 class="section-title">Experience</h2><p class="sub">My professional journey</p>
+<div class="timeline">
+<div class="item"><h3>Robotics Trainer</h3><small>STEM / Robotics Education</small><p>Teaching school students Arduino, robotics, IoT and project-based concepts using simple explanations and hands-on activities.</p></div>
+<div class="item"><h3>Part-time Postal Agent</h3><small>India Post</small><p>Built and maintained relationships with 100+ customers, strengthening communication, customer handling and interpersonal skills.</p></div>
+</div></section>
+
+<section><h2 class="section-title">Education</h2><p class="sub">Academic background</p>
+<div class="grid"><div class="card"><h3>Master of Computer Applications (MCA)</h3><p>SFR College, Sivakasi</p></div><div class="card"><h3>Bachelor of Computer Applications (BCA)</h3><p>SFR College, Sivakasi</p></div></div></section>
+
+<section id="contact"><h2 class="section-title">Let's Connect</h2><p class="sub">Open to opportunities in technology, analytics, QA, AI/ML and STEM education.</p>
+<div class="card"><p><strong>Email:</strong> Add your email here</p><p><strong>LinkedIn:</strong> Add your LinkedIn profile</p><p><strong>GitHub:</strong> Add your GitHub profile</p><div class="btns"><a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email Me</a></div></div></section>
+
+<footer>© 2026 Pon Abinaya • Personal Portfolio</footer>
+</body>
+</html>
